@@ -17,6 +17,7 @@ export class UsersService {
   }
 
   async create(userData: Partial<User>) {
-  const user = this.userRepository.create(userData);
-  return this.userRepository.save(user);
+    const user = this.userRepository.create(userData);
+    return this.userRepository.save(user);
+  }
 }
